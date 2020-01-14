@@ -11,6 +11,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, World!")
+            .contextMenu {
+                Button(action: {
+                    print("Copy button pressed")
+                }) {
+                    Text("Copy")
+                    Image(systemName: "doc.on.doc")
+                }
+        }
     }
 }
 
